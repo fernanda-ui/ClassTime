@@ -1,0 +1,670 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+    /*Gama de colores: tonos azules*/
+    --A-primero1:rgba(17, 34, 17, 0.021)B;
+    --A-primero: #121B;
+    --A-segundo: #1858D9;
+    --A-tercero: #0756F2;
+    --A-cuarto: #121c4e;
+    --A-cuarto1: #121c4ecb;
+    --A-cuarto2: #0E1D73;
+    --A-quinto: #121B26;
+    --A-quinto-: #010d1b;
+    --A-quinto2: #121b2681;
+    --A-quinto3: #121b26bb;
+    --A-quinto4: #202c3bbb;
+
+    /*Gama azul-agua-marina*/
+    --M-tono-medio1: #5699af7c;
+    --M-tono-medio: #6cbeda;
+    /*Gama de colores: tonos verdes y rosado*/
+    --R-primero: #D9184B;
+    --R-segundo: #7e0e2cc0;
+    --R-segundo1: #4b0b1c9c;
+    --V-primero: #2cbf5fa8;
+    --V-primero1: #2CBF60;
+    --V-segundo: #69df78c4;
+    --V-segundo1: #69df7962;
+
+    /*Colores extras*/
+    --Negro: black;
+    --N-primero: #04040d;
+    --G-primero: #949494;
+    --G-segundo: #f2f2f257;
+    --G-tercero: #f2f2f270;
+    --G-cuarto: #434343;
+    --blanco: white;
+    --B-tono1: #f5f5f5;
+    --B-tono2: #f0f0f0;
+    --Am-primero: #dda06e;
+
+
+   }
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--A-quinto);
+}
+
+/*contenido del encabezado de la pagina*/
+
+.encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--A-quinto4);
+    border-bottom: 3px solid var(--G-tercero);
+    width: 100%;
+    height: 10vh;
+
+}
+
+.encabezado h1 {
+    display: none;
+}
+
+.enlaces a {
+    display: none;
+}
+
+.perfil {
+    display: none;
+}
+
+.fot-user {
+    width: 4rem;
+    border-radius: 50%;
+    position: relative;
+    right: 2rem;
+}
+
+.notifi {
+    width: 5rem;
+    font-size: 2rem;
+    position: relative;
+    right: 2.3rem;
+    top: 4px;
+    color: var(--V-segundo);
+}
+
+.unilog {
+    width: 5rem;
+    position: relative;
+    left: 2rem;
+}
+
+.enlaces {
+    width: 39rem;
+}
+.enlaces h5 {
+    font-size: 1.5rem;
+    position: relative;
+    left: 4.3rem;
+    color: #ddd;
+    font-weight: 500;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento x=2px, y=2px, radio de desenfoque=4px, color=rgba(0, 0, 0, 0.5) */
+
+}
+
+.enl-video {
+    display: none;
+}
+
+.nav-container {
+    position: absolute;
+    bottom: 0;
+    height: 90vh;
+    width: 6rem;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    background-color: var(--A-quinto-);
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.5s ease;
+    
+}
+
+.logo:hover {
+    background: none;
+}
+
+.logo img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 30%;
+    position: relative;
+    top: 1.2rem;
+    right: 2.1rem;
+}
+
+.logo span {
+    font-weight: bold;
+    padding-right: 11rem;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.nav-container a {
+    position: relative;
+    color: var(--V-primero);
+    font-size: 14px;
+    display: table;
+    width: 30rem;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+.nav-container a:hover {
+    color: var(--G-primero);
+}
+
+.nav-container span {
+    color: var(--B-tono1);
+}
+
+ .nav-container .fas {
+    position: relative;
+    width: 4rem;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.nav-item {
+    position: relative;
+    bottom: 1rem;
+    margin-left: 2rem;
+}
+
+a:hover {
+    background: var(--A-quinto2);
+}
+
+nav:hover {
+    width: 280px;
+    transition: all 0.5s ease;
+}
+
+/*aside1*/
+/*estilos del contenido de inicio de la pagina*/
+.aside1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr ); /* 3 columnas igualmente distribuidas */
+    gap: 1.7rem; /* Espacio entre los contenedores */
+    width: 73%;
+    margin-top: 2rem;
+    margin-left: 8.1rem;
+    position: absolute;
+    z-index: 1;  
+    
+}
+
+/*clase corresponde a todos los cuadros con nombre de las materias*/
+.container-aside {
+    width: 27rem;
+    height: 8rem;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.623); /* Sombra de caja */
+    border-radius: 5px;
+}
+/* Estilos específicos para cada cuadro*/
+#container1 {
+    background-image: url('Recursos/inge.jpg');
+}
+#container2 {
+    background-image: url('Recursos/b-datos.webp');
+}
+#container3 {
+    background-image: url('Recursos/automatas.jpg');
+}
+#container4 {
+    background-image: url('Recursos/DS.jpg');
+}
+#container5 {
+    background-image: url('Recursos/contabilidad.jpg');
+}
+#container6 {
+    background-image: url('Recursos/sistemas.jpg');
+}
+
+/*clase que corresponde al logo de la uni que aparece a pasar el cursor sobre los cuadros*/
+.log-oculto {
+    position: absolute; 
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Centra el texto */
+    color: var(--A-quinto-);
+    width: 2rem;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+  }
+
+  /* Efecto de levantamiento al pasar el cursor sobre los cuadros */
+.container-aside:hover {
+    transform: translateY(-4px); /* Levanta el cuadrado 5px hacia arriba al hacer hover */
+  }
+
+  .container-aside:hover {
+    opacity: 0.2; /* Reduce la opacidad al hacer hover */
+  }
+  
+  /* Mostrar el texto al pasar el cursor sobre el contenedor */
+  .container-aside:hover .log-oculto {
+    opacity: 1; 
+  }
+
+.container-aside button {
+    width: 100%;
+    height: 4rem;
+    color: var(--B-tono2);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    top: 4.2rem;
+    border: none;
+    border-top: 4px solid var(--V-primero);
+    background-color: var(--A-quinto-);
+
+}
+
+/*estilos del contenido del horario*/
+
+/* estilos de aside2*/
+.aside2 {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura según sea necesario */
+    width: 100%;
+    margin-left: 2.9rem;
+    margin-top: 2rem;
+    
+}
+
+/*esta clase corresponde a las dos tarjetas del horario*/
+.tarjeta {
+    width: 78%;
+    height: 40vh;
+    perspective: 300rem; /* Establece la perspectiva para el efecto 3D */
+    box-shadow: 3px 2px 4px rgba(5, 5, 5, 0.5);
+    border-radius: 1rem;
+    
+}
+
+.targ-2 {
+    position: relative;
+    top: 2rem;
+}
+
+/*clas de la tarjeta 2*/
+
+
+/*la clase front corresponde a los estilos de la parte del frente de la tarjeta, y la clase back corresponde a los estilos de la parte trasera de la tarjeta*/
+.front, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Oculta la parte trasera al frente */
+    transition: transform 0.6s;
+
+}
+
+.front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg); /* Inicialmente oculta la parte trasera */
+}
+
+/*esta clase corresponde a los estilos de la parte del frente de la tarjeta*/
+.semana-a {
+    background-image: url(Recursos/A\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.semana-a h1 {
+    color: var(--B-tono1);
+    position: relative;
+    bottom: 10rem;
+    left: 6rem;
+    font-size: 2rem;
+    text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.5);
+    background: var(--A-quinto);
+    width: 15rem;
+    height: 4rem;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 3px 2px 4px rgba(76, 75, 75, 0.5);
+    
+}
+
+/*esta clase corresponde a los dos partes traseras de las dos tarjetas*/
+.semana-ab-trasera {
+    background-color: var(--V-segundo);
+}
+
+/*esta clase corresponde a las tablas de la parte de atras de la tarjeta*/
+.tabla-trasera {
+   display: none;
+
+
+}
+
+/*esta clase corresponde a los estilos de la parte del frente de la segunda tarjeta*/
+.semana-b {
+    background-image: url(Recursos/A\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.semana-b h1 {
+    color: var(--B-tono1);
+    position: relative;
+    top: 10rem;
+    right: 6rem;
+    font-size: 2rem;
+    text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.5);
+    background: var(--A-quinto);
+    width: 15rem;
+    height: 4rem;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 3px 2px 4px rgba(76, 75, 75, 0.5);
+    
+}
+
+/* estilos del Calendario*/
+
+.calendar-container {
+    display: none;
+    
+}
+
+/*estilos del contenido de fechas*/
+.aside3 {
+    width: 77%;
+    margin: 1rem;
+    margin-left: 7rem;
+    
+}
+
+.box {
+    width: 100%;
+    height: 17rem;
+    background-color: var(--A-quinto-);
+    box-sizing: border-box; 
+    border: 1px solid #ccc;
+}
+
+.box-10 {
+    width: 100%;
+    background-color: var(--A-primero);
+    box-sizing: border-box; 
+    border: 1px solid #ccc;
+    
+}
+
+.box-10 p {
+    border-bottom: 1px solid var(--G-tercero); 
+    color: var(--B-tono2);
+    font-size: 1rem;
+    text-align: center;
+    padding: 4px 0;
+
+
+}
+
+.box p {
+    margin: 0; 
+    border-bottom: 1px solid var(--G-tercero); 
+    color: var(--B-tono2);
+    padding: 4px 0;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+.box p:last-child {
+    border-bottom: none; 
+}
+
+.box-10 p:last-child {
+    border-bottom: none; 
+}
+
+/*contenido del chat privado*/
+/*aside 4*/
+  
+  /* Estilos generales para el contenedor principal */
+.aside4 {
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    margin-left: 6rem;
+  }
+  
+  /* Estilos para la lista de chats/grupos */
+  .aside4 > div {
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .chat {
+    display: flex;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--A-quinto);
+  }
+  
+  .chat:hover {
+    background-color: var(--A-quinto4);
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  
+  .chat-details {
+    flex: 1;
+  }
+
+  .chat-details h3 {
+    color: var(--B-tono2);
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+
+  .chat-details p {
+    color: var(--G-cuarto);
+  }
+  
+  /* Estilos para el área de mensajes */
+  .message-area {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--A-quinto4);
+    padding: 2rem;
+    box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1); /* Efecto sombra en la parte inferior */
+    z-index: 1; /* Asegura que la ventana de mensajes esté por encima de la lista de chats */
+  }
+  
+  .message-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .message-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+
+  .message-header h3 {
+    color: var(--B-tono2);
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  
+  .message-content p {
+    color: var(--B-tono2);
+    margin-left: 1rem;
+  }
+  .message-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  .message-input input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid var(--G-primero);
+    border-radius: 20px;
+    background-color: var(--A-quinto4);
+
+  }
+
+  .message-input input::placeholder {
+    color: var(--G-tercero);
+  }
+  
+  .message-input button {
+    padding: 10px 20px;
+    background-color: var(--V-primero);
+    color: var(--B-tono2);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  /*estilos del contenido de ayuda*/
+
+  .aside5 {
+    width: 80%;
+    margin-left: 6.6rem;
+    margin-top: 3rem;
+  }
+
+  .header img {
+    width: 30rem;
+    position: relative;
+    top: 3rem;
+    border: 1rem solid var(--A-quinto-);
+    border-bottom: 5rem solid var(--A-quinto-);
+  }
+
+  .search {
+    position: relative;
+    bottom: 1rem;
+    height: 7rem;
+    left: 1rem;
+  }
+
+  .search input {
+    width: 22rem;
+    height: 2.8rem;
+    background-color: var(--A-quinto-);
+    border: 1px solid var(--G-primero);
+
+  }
+
+  .search button {
+    padding: 2px;
+    background-color: var(--V-primero);
+    color: var(--B-tono2);
+  }
+
+  .enl-video-cel {
+    color: var(--A-quinto);
+    font-size: 1.2rem;
+    background-color: var(--V-primero1);
+    padding: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 1px;
+    border: 1px solid var(--G-primero);
+    border-bottom: 2px solid var(--A-primero);
+    border-right: 2px solid var(--A-primero);
+    position: relative;
+    left: 1rem;
+    top: 1rem;
+    
+    
+  }
+
+  .faq {
+    position: relative;
+    bottom: 2.3rem;
+    left: 1rem;
+  }
+
+  .faq h2 {
+    color: var(--G-primero);
+    margin-top: 1rem;
+  }
+
+  .preguntas {
+    margin-top: 1.2rem;
+  }
+
+  .preguntas ul li{
+    height: 3rem;
+  }
+
+  .preguntas ul li a {
+    color: var(--V-primero1);
+    text-decoration: none;
+  }
+
+.notification-popup {
+    display: none;
+}
+  

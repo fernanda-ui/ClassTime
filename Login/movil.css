@@ -1,0 +1,231 @@
+:root {
+    /*Gama de colores: tonos azules*/
+    --A-primero: #121B;
+    --A-segundo: #1858D9;
+    --A-tercero: #0756F2;
+    --A-cuarto: #0E1D73;
+    --A-quinto: #121B26;
+    /*Gama azul-agua-marina*/
+    --M-tono-medio: #6cbeda;
+    /*Gama de colores: tonos verdes y rosado*/
+    --R-primero: #D9184B;
+    --R-segundo: #7e0e2cc0;
+    --V-primero: #2CBF60;
+    --V-segundo: #66D914;
+    /*Colores extras*/
+    --Negro: black;
+    --N-primero: #04040d;
+    --G-primero: #949494;
+    --G-segundo: #f2f2f257;
+    --G-tercero: #f2f2f26a;
+    --G-cuarto: #434343;
+    --blanco: white;
+    --B-tono1: #f5f5f5;
+    --B-tono2: #f0f0f0;
+
+   }
+
+   * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    
+   }
+
+   html {
+    font-size: 62.5%;
+   }
+
+   body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--A-quinto);
+    
+   }
+
+   .container {
+    width: 100%;
+    height: 100vh;
+   }
+
+   .nav-container {
+    position: fixed;
+    background: linear-gradient( to left, #272f3ae7, var(--R-segundo));
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+   }
+
+   .nav-container .logo {
+    width: 3rem;
+   }
+
+   h1 {
+    color: var(--B-tono1);
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 1px 1px 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+
+   .img-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+   }
+
+   .img-form .img {
+    width: 33rem;
+    border-radius: 10px 10px 0 0;    
+}   
+   
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 33rem;
+    height: 15rem;
+    background: linear-gradient(180deg, #1a2636, #272f3ae7, #1b24302f);
+    position: relative;
+    bottom: 3rem;
+    box-shadow: 1px 1px 10px 2px rgba(255, 255, 255, 0.096);
+    border-radius: 0 0 10px 10px;
+    
+}
+
+.formulario input {
+    width: 80%;
+    padding: 1.1rem;
+    background-color: var(--A-quinto);
+    border: none;
+    border-radius: 5px;
+    border-left:5px solid #2CBF60;
+    color: #FFFFFF;
+    box-sizing: border-box; 
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    outline: none;
+
+}
+
+.formulario input:hover {
+    box-shadow: 0px 0px 5px #2CBF60;
+
+}
+.formulario label {
+    position: relative;
+    left: 2rem;
+    top: 3rem;
+}
+
+.formulario i {
+    font-size: 1.5rem;
+    position: relative;
+    top: 0.3rem;
+    color: var(--G-primero);
+}
+
+.ingresar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33rem;
+    height: 4rem;
+    background-color: var(--V-primero);
+    color: var(--B-tono2);
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-bottom: 2px solid var(--A-quinto);
+}
+
+.final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    height: 20rem;
+}
+
+.linea {
+    width: 33rem;
+    height: 1px;
+    background-color: var(--G-primero);
+    position: relative;
+    top: 7rem;
+    text-align: center;
+    
+}
+
+.texto {
+    height: 10rem;
+    position: relative;
+    top: 8rem;
+    text-align: center;
+}
+
+.texto h2 {
+    color: var(--G-tercero);
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    text-transform: uppercase;
+}
+
+.log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log img {
+    width: 2.8rem;
+    margin-top: 1rem;
+    
+}
+
+.texto .num {
+    color: var(--G-primero);
+    font-weight: 900;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+.texto a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--R-primero);
+    font-weight: 550;
+    position: relative;
+    top: 0.8rem;
+    text-align: center;
+}
+
+.ingresar-pc {
+    display: none;
+}
+
+.img2 {
+    display: none;
+}
+
+.title {
+    display: none;
+}
+
+.icon-ingre {
+    display: none;
+}
+
+
+
+
+
+
+
+   
+

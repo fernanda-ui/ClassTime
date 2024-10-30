@@ -1,0 +1,253 @@
+:root {
+    /*Gama de colores: tonos azules*/
+    --A-primero: #121B;
+    --A-segundo: #1858D9;
+    --A-tercero: #0756F2;
+    --A-cuarto: #384cbed0;
+    --A-quinto: #121B26;
+    /*Gama azul-agua-marina*/
+    --M-tono-medio: #6cbeda;
+    /*Gama de colores: tonos verdes y rosado*/
+    --R-primero: #D9184B;
+    --R-segundo: #7e0e2cc0;
+    --V-primero: #2CBF60;
+    --V-segundo: #66D914;
+    /*Colores extras*/
+    --Negro: black;
+    --N-primero: #04040d;
+    --G-primero: #949494;
+    --G-segundo: #f2f2f257;
+    --G-tercero: #f2f2f26a;
+    --G-cuarto: #434343;
+    --blanco: white;
+    --B-tono1: #f5f5f5;
+    --B-tono2: #f0f0f0;
+
+   }
+
+   * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+   }
+
+   html {
+    font-size: 62.5%;
+   }
+
+   body {
+    background-color: var(--A-quinto);
+   }
+
+   .nav-container {
+    display: none;
+   }
+
+   .img {
+    display: none;
+   }
+
+   .container {
+    width: 100%;
+    height: 100vh;
+   }
+
+   .img-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #7e0e2c3d, #1a26367a, #1a2636);
+    width: 70%;
+    height: 70vh;
+    margin: 0 auto;
+    position: relative;
+    top: 7rem;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px;
+
+
+   }
+
+
+   .title-img-pc .img2 {
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    top: 2rem;
+   }
+
+   .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5rem;
+   }
+
+   .title .logo {
+    width: 3rem;
+   }
+
+   .title h1 {
+    color: var(--G-tercero);
+    font-size: 2rem;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 1px 1px 2px;
+
+   }
+
+   .formulario {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    background: linear-gradient(180deg, #1a2636, #272f3ac7);
+    width: 60%;
+    height: 70vh;
+    box-shadow: 0 2px 15px;
+    
+   }
+
+
+   .icon-ingre {
+    width: 60%;
+    height: 40vh;
+   }
+
+   .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 3rem;
+    right: 1rem;
+   }
+
+   .icons a {
+    padding: 3rem 1.6rem;
+    text-decoration: none;
+   }
+
+   .icons i {
+    color: var(--A-cuarto);
+    font-size: 1.2rem;
+    
+    
+   }
+
+   .icons a li {
+    list-style: none;
+    font-size: 1rem;
+    color: var(--G-primero);
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 0.3rem;
+   }
+
+   .icon-ingre h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--G-segundo);
+    text-align: center;
+    font-size: 1.7rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 5rem;
+    right: 1.5rem;
+    text-transform: uppercase;
+    
+   }
+
+
+   .formulario input {
+    width: 100%;
+    padding: 1.1rem;
+    background-color: var(--A-quinto);
+    border: none;
+    border-radius: 5px;
+    border-left:5px solid #2CBF60;
+    color: var(--G-primero);
+    box-sizing: border-box; 
+    margin-bottom: 2rem;
+    outline: none;
+
+}
+
+.formulario input:hover {
+    box-shadow: 0px 0px 5px #2CBF60;
+
+}
+.formulario label {
+    position: relative;
+    bottom: 3.5rem;
+    right: 1rem;
+}
+
+.formulario .fa-user {
+    display: none;
+}
+
+.formulario .fa-lock {
+    display: none;
+}
+
+.ingresar-pc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19rem;
+    height: 3.2rem;
+    background-color: var(--V-primero);
+    color: var(--B-tono2);
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid var(--A-quinto);
+    position: relative;
+    bottom: 3rem;
+    right: 1rem;
+    border-radius: 5px;
+}
+
+.final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 8rem;
+}
+
+
+.texto h2{
+    color: var(--G-tercero);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+
+}
+
+.log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log img {
+    width: 1.7rem;
+}
+
+.log .num {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--G-primero);
+}
+
+.ingresar {
+    display: none;
+}
+
+.final a {
+    display: none;
+}
